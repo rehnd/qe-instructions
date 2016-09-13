@@ -25,6 +25,14 @@ Now change to this directory:
 
 where X is the number of processors to compile with
 
+To compile in serial instead of parallel (but still with the Intel compiler), instead perform:
+
+    $ cd espresso-5.2.0
+    $ ./configure --prefix=`pwd` --disable-parallel
+    $ make pw -j X
+
+If using this, you should see that `ifort` is the compiler used (given that you have loaded the intel/2015 module).
+
 #### 2) Compiling TDDFT code
 Download the code and change to the downloaded directory. Then run:
 
