@@ -17,7 +17,8 @@ You can do this via
     $ wget http://www.qe-forge.org/gf/download/frsrelease/195/806/espresso-5.2.0.tar.gz
     $ tar xvzf espresso-5.2.0.tar.gz
 
-Now change to this directory:
+#### Compiling Parallel PW
+After unpacking espresso-5.2.0, do the following: 
 
     $ cd espresso-5.2.0
     $ ./configure --prefix=`pwd` --with-scalapack=intel
@@ -25,6 +26,7 @@ Now change to this directory:
 
 where X is the number of processors to compile with
 
+#### Compiling Serial PW
 To compile in serial instead of parallel (but still with the Intel compiler), instead perform:
 
     $ cd espresso-5.2.0
