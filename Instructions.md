@@ -2,9 +2,9 @@
 These directions apply for Sherlock and AHPCRC (kratos) clusters.
 
 #### 1) Compiling Quantum Espresso
-Make sure that intel 2015 module is loaded
+Make sure that intel 2015/2016/2017 module is loaded (some of these have different names, like `intel/2016.u1`)
 
-    $ module load intel/2015
+    $ module load intel/2016
 
 (can put that line in .bashrc)
 
